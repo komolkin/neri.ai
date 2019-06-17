@@ -19,9 +19,38 @@
     h3 {
         font-weight: 300;
     }
+    .wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+        display: table;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        table-layout: fixed;
+    }
+    .container {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .neri {
+        width: 640px;
+        margin: 0 auto;
+        text-align: center;
+    }
     </style>
 </head>
 <body>
-    <h3>NERI is a collectible skateboards<br>with AR + music_</h3>
+    <!-- <h3>NERI is a collectible skateboards<br>with AR + music_</h3> -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="neri"><img src="neri.svg" alt=""></div>
+        </div>
+    </div>
 </body>
 </html>
