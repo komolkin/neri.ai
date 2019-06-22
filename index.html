@@ -7,7 +7,7 @@
     <title>NERI</title>
     <style>
     html, body {
-        padding: 24px;
+        padding: 0;
         margin: 0;
     }
     body {
@@ -16,44 +16,55 @@
         color: white;
         line-height: 140%;
     }
-    h3 {
-        font-weight: 300;
+    a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.5s;
     }
-    .wrapper {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        font-size: 100%;
-        display: table;
-        vertical-align: middle;
-        margin: 0;
-        padding: 0;
-        table-layout: fixed;
+    a:hover {
+        border-color: white;
     }
-    .container {
-        display: table-cell;
-        vertical-align: middle;
+    img {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 750px;
+        transform: translate(-50%, -50%);
     }
-    .neri {
-        width: 640px;
-        margin: 0 auto;
-        text-align: center;
+    h1 {
+        position: fixed;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50, 0);
     }
-    .neri img {
-        width: 240px;
+    a.new {
+        position: fixed;
+        top: 50%;
+        left: 40px;
+        transform-origin: 0 0;
+        transform: rotate(-90deg) translate(-50%, 0);
+    }
+    a.rituals {
+        position: fixed;
+        top: 50%;
+        right: 40px;
+        transform-origin: 100% 0;
+        transform: rotate(90deg) translate(50%, 0);
+    }
+    a.future {
+        position: fixed;
+        bottom: 40px;
+        left: 50%;
+        transform: rotate(180deg) translate(50%, 0);
     }
     </style>
 </head>
 <body>
-    <!-- <h3>NERI is a collectible skateboards<br>with AR + music_</h3> -->
-    <div class="wrapper">
-        <div class="container">
-            <div class="neri"><img src="neri.svg" alt=""></div>
-        </div>
-    </div>
+    <h1>NERI</h1>
+    <a href="https://www.instagram.com/nerifuture/" class="new">NEW</a>
+    <a href="https://www.instagram.com/nerifuture/" class="rituals">RITUALS</a>
+    <a href="https://www.instagram.com/nerifuture/" class="future">FUTURE</a>
+    <img src="black.png">
 </body>
 </html>
