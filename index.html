@@ -17,16 +17,14 @@
         background-color: #121212;
         color: white;
 
-        min-height: 100vh;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         perspective: 800px;
     }
     img {
-        width: 3200px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 2800px;
+        transform: rotateX(20deg) rotateY(20deg) translate(-50%, -50%);
     }
     a {
         font-size: 36px;
