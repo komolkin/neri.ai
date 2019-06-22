@@ -20,14 +20,16 @@
     .container {
         width: 100%;
         height: 100%;
-        perspective: 900px;
+        -webkit-perspective: 900px;
+        -moz-perspective: 900px;
     }
     img {
         position: fixed;
         top: 50%;
         left: 50%;
         width: 2800px;
-        transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg);
+        -webkit-transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg);
+        -moz-transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg);
     }
     a {
         font-size: 36px;
