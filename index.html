@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animation.css">
     <title>NERI</title>
     <style>
     html, body {
@@ -61,13 +62,27 @@
         left: 50%;
         transform: rotate(180deg) translate(50%, 0);
     }
+    @media screen and (max-width: 500px) {
+        a.neri {
+            top: 32px;
+        }
+        a.new {
+            left: 32px;
+        }
+        a.rituals {
+            right: 32px;
+        }
+        a.future {
+            bottom: 32px;
+        }
+    }
     </style>
 </head>
 <body>
-    <a href="https://www.instagram.com/nerifuture/" class="neri">NERI</a>
-    <a href="https://www.instagram.com/nerifuture/" class="new">NEW</a>
-    <a href="https://www.instagram.com/nerifuture/" class="rituals">RITUALS</a>
-    <a href="https://www.instagram.com/nerifuture/" class="future">FUTURE</a>
-    <img src="black.jpg">
+    <a href="https://www.instagram.com/nerifuture/" class="neri animate fadeIn queue2s">NERI</a>
+    <a href="https://www.instagram.com/nerifuture/" class="new animate fadeIn queue2s">NEW</a>
+    <a href="https://www.instagram.com/nerifuture/" class="rituals animate fadeIn queue2s">RITUALS</a>
+    <a href="https://www.instagram.com/nerifuture/" class="future animate fadeIn queue2s">FUTURE</a>
+    <img src="black.jpg" class="animate fadeInUp queue4s">
 </body>
 </html>
