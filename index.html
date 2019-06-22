@@ -17,7 +17,16 @@
         color: white;
     }
     .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         perspective: 600px;
+    }
+    .board {
+        width: 3400px;
+        height: 2395.5px;
+        transform: rotateX(5deg) rotateY(5deg);
     }
     a {
         font-size: 36px;
@@ -31,16 +40,6 @@
     }
     a:hover {
         border-color: white;
-    }
-    img {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        width: 3000px;
-        /* translate(-50%, -50%); */
-    }
-    .board {
-        transform: rotateX(5deg) rotateY(5deg);
     }
     a.neri {
         position: fixed;
